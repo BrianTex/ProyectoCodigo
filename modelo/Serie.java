@@ -1,4 +1,4 @@
-package modelado;
+package modelo;
 
 public class Serie extends ObjetoRentable{
     private Temporada[] temporadas;
@@ -10,14 +10,6 @@ public class Serie extends ObjetoRentable{
     }
     public Temporada getTemporada(int i){
         return temporadas[i];
-    }
-    public void addTemporada(String fecProduc, String fecEstr){
-        if(numTemporadas<20){
-            temporadas[numTemporadas]=new Temporada(fecProduc,  fecEstr);
-            numTemporadas++;
-        }else{
-            System.out.println("No hay capacidad para más temporadas");
-        }
     }
     public int getNumTemporadas(){
         return numTemporadas;

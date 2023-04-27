@@ -1,4 +1,4 @@
-package modelado;
+package modelo;
 
 public class Director extends Persona{
     private Pelicula[] peliculas=new Pelicula[30];
@@ -25,14 +25,6 @@ public class Director extends Persona{
     }
     public Pelicula getPelicula(int i){
         return peliculas[i];
-    }
-    public void addPelicula(Pelicula p){
-        if(numPelicula<=30){
-            peliculas[numPelicula]=p;
-        }
-        else{
-            System.err.println("No puede tener mas peliculas");
-        }
     }
     public int getNumPelicula(){
         return numPelicula;

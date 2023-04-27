@@ -1,4 +1,4 @@
-package modelado;
+package modelo;
 
 public class Cliente extends Persona{
     private String direccion;
@@ -28,14 +28,6 @@ public class Cliente extends Persona{
     }
     public Renta getRenta(int i){
         return rentas[i];
-    }
-    public void addRenta(Renta r){
-        if(numRenta<=3){
-            rentas[numRenta]=r;
-        }
-        else{
-            System.err.println("No puede tener mas tres objetos en renta al mismo tiempo");
-        }
     }
     public void eliminarRenta(int i){
         numRenta=numRenta-1;

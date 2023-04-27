@@ -1,4 +1,4 @@
-package modelado;
+package modelo;
 
 
 public class Temporada {
@@ -23,13 +23,6 @@ public class Temporada {
     }
     public void setFecEstreno(String fE){
         fecEstreno= fE;
-    }
-    public void addCapitulo(String t, String s,double d){
-        if(numCapitulos<50){
-            capitulos[numCapitulos]=new Capitulo(t, s, d);
-        }else{
-            System.out.println("No hay capacidad para mas capitulos");
-        }
     }
     public Capitulo getCapitulo(int i){
         return capitulos[i];

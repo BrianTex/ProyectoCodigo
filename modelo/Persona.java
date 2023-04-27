@@ -1,4 +1,4 @@
-package modelado;
+package modelo;
 
 public class Persona {
     protected String nombre;

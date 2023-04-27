@@ -1,4 +1,4 @@
-package modelado;
+package modelo;
 
 public class Pelicula extends ObjetoRentable {
     private String sipnosis;
@@ -32,14 +32,6 @@ public class Pelicula extends ObjetoRentable {
     }
     public Actor getActor(int i){
         return actores[i];
-    }
-    public void addActor(Actor ac){
-        if(numActores<30){
-            actores[numActores]= ac;
-            numActores++;
-        }else{
-            System.out.println("Ya no hay capacidad para mas actores");
-        }
     }
     public String toString(){
         return super.toString()+"Sipnois: "+sipnosis+"\nPais: "+pais+"\nDirector: "+director +"\nNumero de actores: "+numActores;

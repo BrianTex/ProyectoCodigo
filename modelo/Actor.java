@@ -1,4 +1,4 @@
-package modelado;
+package modelo;
 public class Actor extends Persona{
     private String papel;
     private Pelicula[] peliculas= new Pelicula[30];
@@ -36,13 +36,4 @@ public class Actor extends Persona{
     public Pelicula getPelicula(int i){
         return peliculas[i];
     }
-    public void addPelicula(Pelicula p){
-        if(numPelicula<=30){
-            peliculas[numPelicula]=p;
-        }
-        else{
-            System.err.println("No se pueden agregar mas peliculas");
-        }
-    }
-
 }

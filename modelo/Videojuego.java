@@ -1,5 +1,4 @@
-
-package modelado;
+package modelo;
 
 public class Videojuego extends ObjetoRentable {
     private String consola;
