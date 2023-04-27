@@ -1,8 +1,5 @@
-package ProyectoCodigo.objetosRentables;
+package modelado;
 
-/**
- * ObjetoRentable
- */
 public class ObjetoRentable {
 
     protected String titulo;

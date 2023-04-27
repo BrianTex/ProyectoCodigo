@@ -1,4 +1,4 @@
-package ProyectoCodigo.objetosRentables;
+package modelado;
 
 public class Serie extends ObjetoRentable{
     private Temporada[] temporadas;

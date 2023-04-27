@@ -1,4 +1,4 @@
-package ProyectoCodigo.personas;
+package modelado;
 
 public class Persona {
     protected String nombre;

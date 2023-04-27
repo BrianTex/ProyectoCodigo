@@ -1,23 +1,15 @@
-package ProyectoCodigo.personas;
+package modelado;
 
-public class Actor extends Persona{
-    private String papel;
-    private Pelicula[] peliculas= new Pelicula[30];
+public class Director extends Persona{
+    private Pelicula[] peliculas=new Pelicula[30];
     private int numPelicula=0;
     private String nacionalidad;
     private String fechaNac;
 
-    public Actor(String nom, String pa, String na, String fN){
+    public Director(String nom, String na, String fN){
         super(nom);
-        papel= pa;
-        nacionalidad=na;
-        fechaNac=fN;
-    }
-    public String getPapel(){
-        return papel;
-    }
-    public void setPapel(String pa){
-        papel=pa;
+        nacionalidad= na;
+        fechaNac= fN;
     }
     public String getFechaNac(){
         return fechaNac;
@@ -29,10 +21,7 @@ public class Actor extends Persona{
         return nacionalidad;
     }
     public void setNacionalidad(String na){
-        nacionalidad=na;
-    }
-    public int getNumPelicula(){
-        return numPelicula;
+        nacionalidad= na;
     }
     public Pelicula getPelicula(int i){
         return peliculas[i];
@@ -42,8 +31,13 @@ public class Actor extends Persona{
             peliculas[numPelicula]=p;
         }
         else{
-            System.err.println("No se pueden agregar mas peliculas");
+            System.err.println("No puede tener mas peliculas");
         }
     }
-
+    public int getNumPelicula(){
+        return numPelicula;
+    }
+    public String toString() {
+        return super.toString()+" Nacionalidad: "+nacionalidad+" fecha de nacimiento: "+fechaNac;
+    }
 }

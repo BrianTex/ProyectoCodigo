@@ -1,4 +1,5 @@
-package ProyectoCodigo.personas;
+package modelado;
+
 public class Cliente extends Persona{
     private String direccion;
     private String telefono;
@@ -35,6 +36,9 @@ public class Cliente extends Persona{
         else{
             System.err.println("No puede tener mas tres objetos en renta al mismo tiempo");
         }
+    }
+    public void eliminarRenta(int i){
+        numRenta=numRenta-1;
     }
     public String toString(){
         return super.toString()+" Direccion: "+direccion+" Telefono: "+telefono+" Objetos en renta: "+numRenta;

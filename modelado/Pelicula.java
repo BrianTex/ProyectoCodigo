@@ -1,5 +1,4 @@
-package ProyectoCodigo.objetosRentables;
- 
+package modelado;
 
 public class Pelicula extends ObjetoRentable {
     private String sipnosis;
@@ -31,7 +30,7 @@ public class Pelicula extends ObjetoRentable {
     public void setDirector(Director d){
         director= d;
     }
-    public void getActor(int i){
+    public Actor getActor(int i){
         return actores[i];
     }
     public void addActor(Actor ac){

@@ -1,4 +1,4 @@
-package ProyectoCodigo.objetosRentables;
+package modelado;
 
 public class Capitulo {
     private String titulo;

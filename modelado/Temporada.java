@@ -1,4 +1,5 @@
-package ProyectoCodigo.objetosRentables;
+package modelado;
+
 
 public class Temporada {
     private String fecProduc;
